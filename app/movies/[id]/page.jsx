@@ -9,12 +9,13 @@ const MoviesDetailsPage = ({ params }) => {
   const { id } = params; 
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
-
+  
+  
   useEffect(() => {
     if (id) {
       getMovieDetails();
     }
-  }, [id]);
+  }, [id, getMovieDetails]);
 
   const getMovieDetails = async () => {
     try {
