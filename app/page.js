@@ -24,9 +24,9 @@ export default async function Home() {
       </h1>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {movies.map((movie) => (
-          <Link href={`/movies/${movie.id}`} >
+          <Link href={`/movies/${movie.id}`} key={movie.id}>
             <div
-             key={movie.id}
+             
               className="bg-black rounded-lg overflow-hidden shadow-md flex flex-col cursor-pointer hover:shadow-lg transition-shadow"
             >
               <div className="relative h-80 w-full overflow-hidden rounded-t-lg">
