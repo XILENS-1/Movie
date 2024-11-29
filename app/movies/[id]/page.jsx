@@ -64,11 +64,11 @@ const MoviesDetailsPage = ({ params }) => {
     <div className="p-8 bg-white min-h-screen">
       <h2 className="text-4xl text-gray-900 mb-4">{movie.title}</h2>
       <div className="flex flex-col lg:flex-row gap-8">
-        <div className="relative w-full lg:w-1/3 h-0 pb-[150%]">
+        <div className="relative w-full lg:w-1/3">
           <Image
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            width={350} // Adjust width for desired size
+            height={525} // Maintain a 2:3 aspect ratio (adjust as needed)
             className="rounded-lg object-cover"
             alt={movie.title}
           />
