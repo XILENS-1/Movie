@@ -69,8 +69,8 @@ const MoviesDetailsPage = ({ params }) => {
         <div className="relative w-full lg:w-1/3">
           <Image
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            width={350} // Adjust width for desired size
-            height={525} // Maintain a 2:3 aspect ratio (adjust as needed)
+            width={350} 
+            height={525} 
             className="rounded-lg object-cover"
             alt={movie.title}
           />
