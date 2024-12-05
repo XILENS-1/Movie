@@ -1,4 +1,5 @@
 "use client";
+import { IoIosArrowBack } from "react-icons/io";
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -52,8 +53,9 @@ const MoviesDetailsPage = ({ params }) => {
         <p>Movie details could not be loaded.</p>
         <button
           onClick={() => router.push("/")}
-          className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg"
+          className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg flex"
         >
+         
           Back to Home
         </button>
       </div>
@@ -85,9 +87,10 @@ const MoviesDetailsPage = ({ params }) => {
       </div>
       <button
         onClick={() => router.push("/")}
-        className="mt-8 px-4 py-2 bg-black hover:bg-black/80 text-white rounded-lg"
+        className="mt-8 px-4 py-2 bg-black hover:bg-black/80 text-white rounded-lg flex items-center justify-center gap-1"
       >
-        ⬅ Back to Home
+        <IoIosArrowBack className="mb-6px]" />
+        Back to Home
       </button>
     </div>
   );
